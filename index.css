@@ -486,6 +486,10 @@ section:nth-child(2n+1) {
 	list-style: none;
 	margin-top: 10px;
 }
+#contact .contact-details ul li a{
+	color: white;
+	text-decoration: none;
+}
 
 /*Media Queries*/
 @media screen and (max-width: 600px){
