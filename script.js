@@ -1,11 +1,13 @@
 // SMOOTH SCROLL EFFECT
-// Fetching list of all the anchors tags on the nav menu
+// Fetching list of all the anchors tags from the nav menu
 var navMenuAnchorTags = document.querySelectorAll('.nav-menu a');
 // console.log(navMenuAnchorTags);
+var stopScrollVertically = true;
 
 var interval;
 for (var i = 0; i < navMenuAnchorTags.length; i++) {
 	navMenuAnchorTags[i].addEventListener('click', function(event){
+		// preventing default behaviour from anchor tag
 		event.preventDefault();
 		// fectching IDs from the text inside the nav menu anchor tag
 		// Or we could have fetched the #ID itself.
@@ -15,7 +17,7 @@ for (var i = 0; i < navMenuAnchorTags.length; i++) {
 		var targetSection = document.getElementById(targetSectionID);
 		console.log(targetSection);
 		
-		interval = setInterval(scrollVertically, 20, targetSection); // time to cover the distance
+		interval = setInterval(scrollVertically, 15, targetSection); // time to cover the distance
 	});
 }
 
