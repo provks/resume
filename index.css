@@ -497,6 +497,8 @@ section:nth-child(2n+1) {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	/*margin-bottom: 5px;*/
+	margin-top: 10px;
 }
 
 #contact .contact-details ul li{
@@ -510,10 +512,45 @@ section:nth-child(2n+1) {
 
 /*Media Queries*/
 @media screen and (max-width: 600px){
+	.horizontal-list {
+		padding: 5px 9px; 
+	}
+	.nav-menu li {
+    	margin: 0.7em 0.7em;
+	}
 
 	#name-and-social {
-	    margin-top: 10vh;
+	    margin-top: 7vh;
 	    margin-left: 4vw;
+	}
+	#name-and-social h1 {
+    	font-size: 31px;
+    	margin-bottom: 2.5%;
+	}
+	#my-image {
+		margin-top: -24vh;
+	}
+	p {
+		font-size: 1rem;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	.letter-spacing-1 {
+		letter-spacing: 0.25rem;
+	}
+	h2 {
+	   font-size: 1rem;
+	}
+	h4 {
+	   font-size: 0.9rem;
+	}
+	.contact-form {
+    	width: 80%;
+    	margin-bottom: 60px;
+	}
+	.contact-details {
+	    width: 90%;
 	}
 	.img-container{
 		margin-bottom: 7px;
